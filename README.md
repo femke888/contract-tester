@@ -1,5 +1,21 @@
 # Local API Contract Tester (MVP)
 
+## Quick Links
+
+- Website: https://contract-tester-agl.pages.dev
+- Download (Windows): https://github.com/femke888/contract-tester/releases/latest
+- Release Notes: https://github.com/femke888/contract-tester/releases
+
+## Install
+
+### Windows
+Download `contract-tester.exe` from the latest GitHub Release and run it directly.
+
+### Python (optional)
+```bash
+pip install contract-tester
+```
+
 A local-first CLI that validates API contracts (OpenAPI/JSON Schema) against real traffic and sample cases.
 
 Docs:
