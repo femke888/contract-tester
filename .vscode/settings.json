@@ -1,0 +1,25 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoSearchPaths": false,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}\\src"
+  ],
+  "python.analysis.exclude": [
+    "**/__pycache__",
+    ".venv",
+    ".venv_test",
+    "build",
+    "dist",
+    "site",
+    "src/local_api_contract_tester.egg-info"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    ".venv": true,
+    ".venv_test": true,
+    "build": true,
+    "dist": true
+  }
+}

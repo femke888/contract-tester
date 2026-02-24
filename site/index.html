@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contract Tester — Local API Contract Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="badge">Local-first • Fast • CI-friendly</div>
+        <h1>Catch API contract drift from real traffic.</h1>
+        <p class="subhead">
+          Validate OpenAPI specs against HAR, curl logs, or normalized JSON.
+          Get grouped errors, fix hints, and an HTML report — without platform lock-in.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#pricing">Get Pricing</a>
+          <a class="btn ghost" href="#demo">View Demo Flow</a>
+        </div>
+        <div class="quick">
+          <div class="quick-card">
+            <div class="label">Install</div>
+            <code>pip install contract-tester</code>
+          </div>
+          <div class="quick-card">
+            <div class="label">Run</div>
+            <code>contract-tester validate --spec api.yaml --traffic traffic.har</code>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="demo">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>1. Ingest traffic</h3>
+            <p>Load HAR exports, curl logs, or normalized JSON.</p>
+          </div>
+          <div class="card">
+            <h3>2. Validate contracts</h3>
+            <p>Match paths, validate request params and response schemas.</p>
+          </div>
+          <div class="card">
+            <h3>3. Fix faster</h3>
+            <p>Get grouped errors with fix hints and a clean HTML report.</p>
+          </div>
+        </div>
+        <div class="demo">
+          <div class="demo-title">CLI Example</div>
+          <pre><code>contract-tester validate --spec api.yaml --traffic traffic.har --report
+
+Total checks: 482
+Errors: 6
+
+Top error groups:
+- response.schema_mismatch|GET|/users/{id}|200 (3)
+- request.param.missing|POST|/users (2)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="muted">Simple, transparent plans. Annual billing gets 2 months free.</p>
+        <div class="pricing">
+          <div class="price-card">
+            <div class="plan">Free (Demo)</div>
+            <div class="price">$0</div>
+            <div class="desc">Great for evaluation.</div>
+            <ul>
+              <li>Up to 25 traffic entries</li>
+              <li>Specs up to 30 paths</li>
+              <li>HTML report + fix hints</li>
+            </ul>
+          </div>
+          <div class="price-card highlight">
+            <div class="plan">Pro</div>
+            <div class="price">$15<span>/user/month</span></div>
+            <div class="desc">For individuals and small teams.</div>
+            <ul>
+              <li>Unlimited traffic and spec size</li>
+              <li>JSON + HTML reports</li>
+              <li>Full request and response validation</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <div class="plan">Team</div>
+            <div class="price">$79<span>/team/month</span></div>
+            <div class="desc">Up to 10 users.</div>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Team license key</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Ship safer APIs, faster.</h2>
+            <p class="muted">Start with the demo, upgrade when you are ready.</p>
+          </div>
+          <a class="btn primary" href="mailto:hello@example.com">Request a License</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div>Contract Tester — Local API Contract Validation</div>
+        <div class="muted">Built for engineers who want speed and clarity.</div>
+      </div>
+    </footer>
+  </body>
+</html>

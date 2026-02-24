@@ -1,0 +1,14 @@
+[
+  {
+    "method": "GET",
+    "path": "/users/123",
+    "status": 200,
+    "response_json": {"id": 123, "name": "Ada"}
+  },
+  {
+    "method": "GET",
+    "path": "/users/123",
+    "status": 200,
+    "response_json": {"name": "Missing id"}
+  }
+]
